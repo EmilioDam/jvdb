@@ -2,6 +2,10 @@
 
 
 int main(){
-	printf("JVDB");
+	FILE *archivo;
+	archivo = fopen("basededatos.txt","w");
+	char *texto = "JVDB";
+	fputs(texto,archivo);
+	fclose(archivo);
 	return 0;
 }
