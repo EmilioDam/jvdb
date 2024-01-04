@@ -1,6 +1,14 @@
 import subprocess
 
-comando = "c:\\xampp\\htdocs\\jvdb\\jvdb.exe insert miempresa clientes cliente5	 'Este es el cliente 5'"
+operacion = "insert"
+basededatos = "miempresa"
+coleccion = "clientes"
+documento = "cliente7"
+contenido = "este es otro contenido de prueba"
+
+
+
+comando = '"c:\\xampp\\htdocs\\jvdb\\jvdb.exe" '+operacion+' '+basededatos+' '+coleccion+' '+documento+' "'+contenido+'"'
 resultado = subprocess.run(comando,shell=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
 
 if resultado.returncode == 0:
