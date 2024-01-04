@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
 	char *coleccion = argv[3];
 	/*
 		Uso:
-		jvdb.exe [operacion] [basededatos][coleccion][operacion][documento][contenido]
+		jvdb.exe [operacion] [basededatos][coleccion][documento][contenido]
 	*/
 	
     if(strcmp(operacion,"select") == 0){
